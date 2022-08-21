@@ -9,14 +9,11 @@ import '../screens/feed_screen.dart';
 import '../screens/search_screen.dart';
 
 const webScreenSize = 600;
-
-
- var pageViewScreenItems = [
+var pageViewScreenItems = [
   FeedScreen(),
   SearchScreen(),
   PostPhotoSelectionScreen(),
   Center(child: Text("Notification")),
   ProfileScreen(),
 ];
-
-  const TextStyle commentFunctionStyle = TextStyle(color: Colors.grey, fontSize: 13);
+const TextStyle commentFunctionStyle = TextStyle(color: Colors.grey, fontSize: 13);

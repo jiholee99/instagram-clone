@@ -7,6 +7,7 @@ import 'package:instagram_clone/screens/comment_screen.dart';
 import 'package:provider/provider.dart';
 
 import 'utils/colors.dart' as util_color;
+import 'utils/keys.dart';
 import './responsive/responsive_layout.dart';
 import './responsive/mobile_screen_layout.dart';
 import './responsive/web_screen_layout.dart';
@@ -21,11 +22,11 @@ void main() async {
   if (kIsWeb) {
     await Firebase.initializeApp(
         options: const FirebaseOptions(
-      apiKey: "AIzaSyCajz27TEswye-Y7VCNFlcaYNkO2btwJ7E",
-      appId: "1:1052522110050:web:abbab0bec0e9b99f32853b",
-      messagingSenderId: "1052522110050",
-      projectId: "instagram-clone-33b2d",
-      storageBucket: "instagram-clone-33b2d.appspot.com",
+      apiKey: apiKey,
+      appId: appId,
+      messagingSenderId: messsagesenderId,
+      projectId: projectId,
+      storageBucket: storageBucket,
     ));
   } else {
     await Firebase.initializeApp();
